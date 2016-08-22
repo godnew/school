@@ -235,3 +235,78 @@ header ul li a{
     height: 600px;
     display: block;
 }
+.border{
+    border-bottom:1px  solid #a3a3a3;
+}
+.border+div{
+    padding:0 50px;
+}
+.border+div h1{
+    font-size: 40px;
+    font-weight: normal;
+    color: #121212;
+    line-height: 40px;
+}
+.border+div p{
+    font-size: 20px;
+    color: #161616;
+    line-height: 20px;
+    margin-top: 3px;
+}
+.home-course{
+    width: 1200px;
+    margin:44px auto 0 auto;
+}
+.home-course img{
+    display: block;
+    margin:auto;
+}
+.home-course li{
+    width: 254px;
+    height: 566px;
+}
+.home-course li>div div{
+    padding-top: 30px;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding-bottom: 15px;
+}
+.home-course li>img{
+    margin-bottom: 18px;
+}
+.home-course h1{
+    color: #121212;
+    margin-bottom: 12px;
+}
+.home-course p{
+    font-size: 16px;
+    color: #121212;
+    text-align: center;
+    padding:0 20px;
+    line-height: 26px;
+}
+.home-course span{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 17px;
+    color: #fff;
+    width: 109px;
+    padding-left: 24px;
+    height: 34px;
+    line-height: 34px;
+    background: #00bbd3 url(../images/home/down.png) no-repeat 96px center;
+    cursor: pointer;
+}
+.home-course-active{
+    background: #00bbd3;
+}
+.home-course-h1-active{
+    color: #fff!important;
+}
+.home-course-p-active{
+    color: #fff!important;
+}
+.home-course-button-active{
+    color: #00bbd3!important;
+    background: #fff url(../images/home/down-active.png) no-repeat 96px center!important;
+}

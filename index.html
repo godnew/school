@@ -24,66 +24,7 @@
 <script src="http://cdn.gbtags.com/angular.js/1.2.20/angular-route.min.js"></script>
 <script src="http://cdn.gbtags.com/angular.js/1.2.20/angular-animate.min.js"></script>
 <script src="http://cdn.gbtags.com/prefixfree/1.0.7/prefixfree.min.js"></script>
-<script>
-    /*Javascript代码片段*/
-    var animateApp = angular.module('animateApp', ['ngRoute', 'ngAnimate']);
-
-    animateApp.config(['$routeProvider',
-        function($routeProvider) {
-            $routeProvider.
-                    when('/home', {
-                        templateUrl: 'template/home.html',
-                        controller: 'HomeController'
-                    }).
-                    when('/about', {
-                        templateUrl: 'template/java.html',
-                        controller: 'AboutController'
-                    }).
-                    when('/contact', {
-                        templateUrl: 'template/php.html',
-                        controller: 'ContactController'
-                    }).
-                    otherwise({
-                        redirectTo: '/home'
-                    });
-        }]);
-
-
-    // CONTROLLERS ============================================
-    // home page controller
-    animateApp.controller('HomeController', function($scope) {
-        $scope.pageClass = 'page-home';
-        $scope.message = "<这里是首页>";
-        (function() {
-            var bannerSlider = new Slider($('#banner_tabs'), {
-                time: 5000,
-                delay: 400,
-                event: 'hover',
-                auto: true,
-                mode: 'fade',
-                controller: $('#bannerCtrl'),
-                activeControllerCls: 'active'
-            });
-            $('#banner_tabs .flex-prev').click(function() {
-                bannerSlider.prev()
-            });
-            $('#banner_tabs .flex-next').click(function() {
-                bannerSlider.next()
-            });
-        })();
-    });
-
-    // about page controller
-    animateApp.controller('AboutController', function($scope) {
-        $scope.pageClass = 'page-about';
-        $scope.message = "<这里是关于页>";
-    });
-
-    // contact page controller
-    animateApp.controller('ContactController', function($scope) {
-        $scope.pageClass = 'page-contact';
-        $scope.message = "<这里是联系页>";
-    });
-</script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
 </body>
 </html>
