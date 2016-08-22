@@ -360,3 +360,10 @@ header ul li a{
     font-size: 20px;
     color: #151515;
 }
+.home-cooperative{
+    width: 1200px;
+    margin:60px auto 77px auto;
+}
+.home-cooperative li{
+    margin-top: 26px;
+}
