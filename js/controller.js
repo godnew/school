@@ -23,6 +23,7 @@ animateApp.controller('HomeController', function($scope) {
     })();
     $scope.pageClass = 'page-home';
     $scope.active=false;
+    $scope.topActive=false;
 });
 
 // about page controller
