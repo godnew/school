@@ -320,3 +320,43 @@ header ul li a{
 .home-room>div:first-child{
     margin-right: 45px;
 }
+.home-intro{
+    font-size: 22px;
+    color: #121212;
+    margin: 40px auto 0 auto;
+    width: 1014px;
+    line-height: 36px;
+}
+.home-intro span{
+    padding-left: 44px;
+    color: #00bbd3;
+}
+.home-aboutUs{
+    width: 1200px;
+    margin:45px auto 0 auto;
+}
+.home-aboutUs li:nth-of-type(even){
+    width:560px ;
+}
+.home-aboutUs li:nth-of-type(odd){
+    width:502px ;
+}
+.home-aboutUs li:nth-of-type(3){
+    margin-top: 66px;
+}
+.home-aboutUs li:nth-of-type(4){
+    padding-top: 66px;
+}
+.home-aboutUs li div{
+    width: 150px;
+}
+.home-aboutUs li div p{
+    font-size: 26px;
+    color: #00bbd3;
+}
+.home-aboutUs li>p{
+    padding-left: 36px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #151515;
+}
