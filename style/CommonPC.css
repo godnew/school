@@ -166,6 +166,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .bge0{background-color:#e0e0e0;}
 /* safe color */
 .g0{color:#000;}
+.g1{color: #111;}
 .g3{color:#333;}
 .g6{color:#666;}
 .g9{color:#999;}
@@ -181,6 +182,9 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .f20{font-size:20px;}
 .f24{font-size:24px;}
 .f28{font-size:28px;}
+.f30{font-size: 30px;}
+.f32{font-size: 32px;}
+.f36{font-size: 36px;}
 /* font-family */
 .fa{font-family:Arial;}
 .ft{font-family:Tahoma;}
@@ -245,34 +249,34 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 
 
 /* ------------------- multiply CSS ------------------ */
-/* ¿é×´ÔªËØË®Æ½¾ÓÖÐ */
+/* ï¿½ï¿½×´Ôªï¿½ï¿½Ë®Æ½ï¿½ï¿½ï¿½ï¿½ */
 .auto{margin-left:auto; margin-right:auto;}
-/* Çå³ý¸¡¶¯*/
+/* ï¿½ï¿½ï¿½*/
 .fix{*zoom:1;}
 .fix:after{display:table; content:''; clear:both;}
-/* »ùÓÚdisplay:table-cellµÄ×ÔÊÊÓ¦²¼¾Ö */
+/* ï¿½ï¿½ï¿½ï¿½display:table-cellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ */
 .cell{display:table-cell; *display:inline-block; width:2000px; *width:auto;}
-/* Ë«À¸×ÔÊÊÓ¦cell²¿·ÖÁ¬ÐøÓ¢ÎÄ×Ö·û»»ÐÐ */
+/* Ë«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦cellï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ */
 .cell2{overflow:hidden; _display:inline-block;}
-/* µ¥ÐÐÎÄ×ÖÒç³öÐéµãÏÔ Ê¾*/
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ê¾*/
 .ell{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
-/* css3¹ý¶É¶¯»­Ð§¹û */
+/* css3ï¿½ï¿½É¶ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ */
 .trans{
 	-webkit-transition:all .15s;	
 	        transition:all .15s;
 }
-/* ´óÐ¡²»¶¨ÔªËØ´¹Ö±¾ÓÖÐ */
+/* ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø´ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ */
 .dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
-/* ¼ÓÔØÖÐ±³¾°Í¼Æ¬ - Èç¹ûÄúÊ¹ÓÃ¸ÃCSSÐ¡¿â£¬Îñ±ØÐÞ¸Ä´ËÍ¼Æ¬µØÖ· */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½Í¼Æ¬ - ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½CSSÐ¡ï¿½â£¬ï¿½ï¿½ï¿½ï¿½Þ¸Ä´ï¿½Í¼Æ¬ï¿½ï¿½Ö· */
 .loading{background:url(about:blank) no-repeat center;}
-/* ÎÞ¿òÎÄ±¾¿òÎÄ±¾Óò */
+/* ï¿½Þ¿ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ */
 .bd_none{border:0; outline:none;}
-/* ¾ø¶Ô¶¨Î»Òþ²Ø */
+/* ï¿½ï¿½Ô¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ */
 .abs_out{position:absolute; left:-999em; top:-999em;}
 .abs_clip{position:absolute; clip:rect(0 0 0 0);}
-/* °´Å¥½ûÓÃ */
+/* ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ */
 .disabled{outline:0 none; cursor:default!important; opacity:.4; filer:alpha(opacity=40); -ms-pointer-events:none; pointer-events:none;}
-/*inline-blockÓëfloatµÈ¿íÁÐ±í*/
+/*inline-blockï¿½ï¿½floatï¿½È¿ï¿½ï¿½Ð±ï¿½*/
 .inline_box{font-size:1em; letter-spacing:-.25em; font-family:Arial;}
 .inline_two, .inline_three, .inline_four, .inline_five, .inline_six, .inline_any{display:inline-block; *display:inline; letter-spacing:0; vertical-align:top; *zoom:1;}
 .float_two, .float_three, .float_four, .float_five, .float_six{float:left;}
@@ -282,7 +286,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .inline_five, .float_five{width:20%; *width:19.9%;}
 .inline_six, .float_six{width:16.66666%; *width:16.6%;}
 .inline_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
-/*flexµ¯ÐÔ²¼¾Ö*/
+/*flexï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½*/
 .df { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
 .dif {display: inline-flex;}
 .fdr {  -webkit-box-direction: normal;-webkit-box-orient: horizontal;-moz-flex-direction: row;-webkit-flex-direction: row;flex-direction: row;}

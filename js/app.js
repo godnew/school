@@ -10,9 +10,9 @@ animateApp.config(['$routeProvider',
                 templateUrl: 'template/home.html',
                 controller: 'HomeController'
             }).
-            when('/about', {
-                templateUrl: 'template/java.html',
-                controller: 'AboutController'
+            when('/c', {
+                templateUrl: 'template/c.html',
+                controller: 'CController'
             }).
             when('/contact', {
                 templateUrl: 'template/php.html',

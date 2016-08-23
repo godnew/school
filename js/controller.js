@@ -34,7 +34,7 @@ animateApp.controller('HomeController', function($scope,anchorScroll) {
 });
 
 // about page controller
-animateApp.controller('AboutController', function($scope) {
+animateApp.controller('CController', function($scope) {
     $scope.pageClass = 'page-about';
     $scope.message = "<这里是关于页>";
 });
