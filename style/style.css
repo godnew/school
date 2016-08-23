@@ -103,6 +103,7 @@ header ul li a{
 }
 .topActive{
     z-index: 100;
+    margin-left: -25px;
 }
 .topActive li{
     width: 166px;
@@ -112,6 +113,15 @@ header ul li a{
     text-align: center;
     background: #fff;
     color: #00bbd3;
+}
+.topActive li a{
+    color: #00bbd3;
+}
+.headerActive{
+    background: #fff url(../images/home/up.png) no-repeat 126px center;
+}
+.headerActive a{
+    color: #00bbd3!important;
 }
 .flexslider {
     margin: 0px auto;
@@ -363,7 +373,8 @@ header ul li a{
     width: 150px;
 }
 .home-aboutUs li div p{
-    font-size: 26px;
+    margin-top: 2px;
+    font-size: 24px;
     color: #00bbd3;
 }
 .home-aboutUs li>p{

@@ -3,7 +3,7 @@
  */
 // CONTROLLERS ============================================
 // home page controller
-animateApp.controller('HomeController', function($scope) {
+animateApp.controller('HomeController', function($scope,anchorScroll) {
     (function() {
         var bannerSlider = new Slider($('#banner_tabs'), {
             time: 5000,
@@ -24,6 +24,13 @@ animateApp.controller('HomeController', function($scope) {
     $scope.pageClass = 'page-home';
     $scope.active=false;
     $scope.topActive=false;
+    $scope.jump = {
+        homeClass:function(){anchorScroll.toView('#homeClass', true)},
+        homeTeacher:function(){anchorScroll.toView('#homeTeacher', true)},
+        homeLearn:function(){anchorScroll.toView('#homeLearn', true)},
+        homeAbout:function(){anchorScroll.toView("#homeAbout",true)}
+    }
+
 });
 
 // about page controller

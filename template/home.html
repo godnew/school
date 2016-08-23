@@ -2,19 +2,19 @@
     <div>
         <img src="images/home/logo.png" alt=""/>
         <ul>
-            <li><a href="">首页</a></li>
-            <li class="">
-                <a href="">培训课程</a>
-                <ul class="topActive abs">
-                    <li>前端工程师</li>
-                    <li>C++工程师</li>
-                    <li>PHP工程师</li>
-                    <li>UI设计师</li>
+            <li><a href="#home">首页</a></li>
+            <li ng-mouseover="topActive=true" ng-mouseleave="topActive=false" ng-class="{'headerActive':topActive}">
+                <a href="" ng-click="jump.homeClass()">培训课程</a>
+                <ul class="topActive abs" ng-show="topActive">
+                    <li><a href="">前端工程师</a></li>
+                    <li><a href="">C++工程师</a></li>
+                    <li><a href="">PHP工程师</a></li>
+                    <li><a href="">UI设计师</a></li>
                 </ul>
             </li>
-            <li><a href="">师资力量</a></li>
-            <li><a href="">学习环境</a></li>
-            <li><a href="">关于我们</a></li>
+            <li><a href="" ng-click="jump.homeTeacher()">师资力量</a></li>
+            <li><a href="" ng-click="jump.homeLearn()">学习环境</a></li>
+            <li><a href="" ng-click="jump.homeAbout()">关于我们</a></li>
         </ul>
     </div>
 </header>
@@ -55,7 +55,7 @@
         <li><a>4</a></li>
     </ol>
 </div>
-<div class="df aic" style="margin-top: 68px;">
+<div class="df aic" style="margin-top: 68px;" id="homeClass">
     <span class="fx1 border"></span>
     <div >
         <h1 class="tc fw">培训课程</h1>
@@ -109,7 +109,7 @@
         </div>
     </li>
 </ul>
-<div class="df aic" style="margin-top: 125px;">
+<div class="df aic" style="margin-top: 125px;" id="homeTeacher">
     <span class="fx1 border"></span>
     <div >
         <h1 class="tc fw">师资力量</h1>
@@ -117,7 +117,7 @@
     </div>
     <span class="fx1 border"></span>
 </div>
-<div class="df aic" style="margin-top: 125px;">
+<div class="df aic" style="margin-top: 125px;" id="homeLearn">
     <span class="fx1 border"></span>
     <div >
         <h1 class="tc fw">学习环境</h1>
@@ -159,7 +159,7 @@
     </div>
 </div>
 <div>
-    <div class="df aic" style="margin-top: 125px;">
+    <div class="df aic" style="margin-top: 125px;" id="homeAbout">
         <span class="fx1 border"></span>
         <div >
             <h1 class="tc fw">关于我们</h1>
