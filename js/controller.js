@@ -36,7 +36,72 @@ animateApp.controller('HomeController', function($scope,anchorScroll) {
 // about page controller
 animateApp.controller('CController', function($scope) {
     $scope.pageClass = 'page-about';
-    $scope.message = "<这里是关于页>";
+    (function(){
+        $(".cProcess li").eq(0).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat 2px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat 2px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(1).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -178px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -178px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(2).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -357px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -357px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(3).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -537px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -537px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(4).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -716px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -716px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(5).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -897px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -897px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(6).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -1076px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -1076px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+        $(".cProcess li").eq(7).hover(function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -1256px -178px");
+            $(this).find(".cShow").show(200);
+
+        },function(){
+            $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat -1256px 2px");
+            $(this).find(".cShow").hide(200);
+        });
+    })();
 });
 
 // contact page controller
