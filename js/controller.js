@@ -135,7 +135,12 @@ animateApp.controller('JavaController', function($scope,anchorScroll) {
 });
 animateApp.controller('PhpController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-php';
-
+    $scope.jump = {
+        phpEmploy:function(){anchorScroll.toView('#phpEmploy', true)},
+        phpAdvantage:function(){anchorScroll.toView('#phpAdvantage', true)},
+        phpProject:function(){anchorScroll.toView('#phpProject', true)},
+        phpSign:function(){anchorScroll.toView("#phpSign",true)}
+    };
 });
 animateApp.controller('UiController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-ui';

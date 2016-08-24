@@ -36,6 +36,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .w600{width:600px;}
 .w640{width:640px;}
 .w700{width:700px;}
+.w1200{width: 1200px;}
 /* percent width value */
 .pct10{width:10%;}
 .pct15{width:15%;}
