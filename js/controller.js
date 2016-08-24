@@ -113,4 +113,23 @@ animateApp.controller('CController', function($scope,anchorScroll) {
 // contact page controller
 animateApp.controller('JavaController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-java';
+    $scope.jump = {
+        javaEmploy:function(){anchorScroll.toView('#javaEmploy', true)},
+        javaAdvantage:function(){anchorScroll.toView('#javaAdvantage', true)},
+        javaProject:function(){anchorScroll.toView('#javaProject', true)},
+        javaSign:function(){anchorScroll.toView("#javaSign",true)}
+    };
+    (function(){
+        var img=$("#javaShowImg");
+        var list=$(".javaProject li");
+        list.click(function(){
+            list.each(function(){
+                $(this).empty();
+            });
+            $(this).append("<div></div>");
+            var index=$(this).attr("index");
+            var src="images/java/scroll"+index+".png";
+           img.attr("src",src);
+        });
+    })();
 });
