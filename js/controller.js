@@ -133,3 +133,11 @@ animateApp.controller('JavaController', function($scope,anchorScroll) {
         });
     })();
 });
+animateApp.controller('PhpController', function($scope,anchorScroll) {
+    $scope.pageClass = 'page-php';
+
+});
+animateApp.controller('UiController', function($scope,anchorScroll) {
+    $scope.pageClass = 'page-ui';
+
+});

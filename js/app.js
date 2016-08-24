@@ -18,6 +18,14 @@ animateApp.config(['$routeProvider',
                 templateUrl: 'template/java.html',
                 controller: 'JavaController'
             }).
+            when( '/php', {
+                templateUrl: 'template/php.html',
+                controller: 'PhpController'
+            }).
+            when('/ui',{
+                templateUrl: 'template/ui.html',
+                controller: 'UiController'
+            }).
             otherwise({
                 redirectTo: '/home'
             });
