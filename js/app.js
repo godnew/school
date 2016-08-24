@@ -14,9 +14,9 @@ animateApp.config(['$routeProvider',
                 templateUrl: 'template/c.html',
                 controller: 'CController'
             }).
-            when('/contact', {
-                templateUrl: 'template/php.html',
-                controller: 'ContactController'
+            when('/java', {
+                templateUrl: 'template/java.html',
+                controller: 'JavaController'
             }).
             otherwise({
                 redirectTo: '/home'

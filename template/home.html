@@ -1,12 +1,12 @@
 <header>
     <div>
         <img src="images/home/logo.png" alt=""/>
-        <ul>
+        <ul class="homeNav">
             <li><a href="#home">首页</a></li>
-            <li ng-mouseover="topActive=true" ng-mouseleave="topActive=false" ng-class="{'headerActive':topActive}">
+            <li ng-mouseover="topActive=true" ng-mouseleave="topActive=false" ng-class="{'headerActive':topActive}" style="background: url(images/home/down.png) no-repeat 126px center;">
                 <a href="" ng-click="jump.homeClass()">培训课程</a>
                 <ul class="topActive abs" ng-show="topActive">
-                    <li><a href="">前端工程师</a></li>
+                    <li><a href="">JAVA工程师</a></li>
                     <li><a href="#c">C++工程师</a></li>
                     <li><a href="">PHP工程师</a></li>
                     <li><a href="">UI设计师</a></li>

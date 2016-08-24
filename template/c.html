@@ -1,23 +1,23 @@
 <header>
     <div>
         <img src="images/home/logo.png" alt=""/>
-        <ul>
+        <ul class="homeNav">
             <li><a href="#home">首页</a></li>
-            <li><a href="" ng-click="">就业前景</a></li>
-            <li><a href="" ng-click="">软融优势</a></li>
-            <li><a href="" ng-click="">项目展示</a></li>
-            <li><a href="" ng-click="">合作企业</a></li>
+            <li><a href="" ng-click="jump.cEmploy()">就业前景</a></li>
+            <li><a href="" ng-click="jump.cAdvantage()">软融优势</a></li>
+            <li><a href="" ng-click="jump.cProject()">项目展示</a></li>
+            <li><a href="" ng-click="jump.cCooperative()">合作企业</a></li>
         </ul>
     </div>
 </header>
-<div class="rel pct100 cBanner">
+<div class="rel pct100 cBanner" >
     <img src="images/c/banner.png" alt="" class="pct100" style="height: 605px;"/>
     <p class="abs pct100 tc wh">C++工程师零基础高薪就业</p>
     <p class="abs pct100 tc wh">学习工作一步到位</p>
     <div class="cButton abs fw">点击报名</div>
 </div>
-<div class="pct100 cContent1">
-    <div class="pct100"><img src="images/c/titl1.png" alt="" class="auto db"/></div>
+<div class="pct100 cContent1" >
+    <div class="pct100" id="cEmploy"><img src="images/c/titl1.png" alt="" class="auto db"/></div>
     <div class="df jcc" style="margin-top: 60px;">
         <div style="margin-right: 136px;">
             <p class=" f36 g1">世界编程语言排行版之C++</p>
@@ -37,8 +37,8 @@
     </ul>
     <div class="cAction">立即行动！不再眼红别人的成功>></div>
 </div>
-<div class="cContent2" style="padding-top: 95px;padding-bottom: 106px;">
-    <div class="pct100"><img src="images/c/titl2.png" alt="" class="auto db"/></div>
+<div class="cContent2" style="padding-top: 95px;padding-bottom: 106px;" >
+    <div class="pct100" id="cAdvantage"><img src="images/c/titl2.png" alt="" class="auto db"/></div>
     <ul class="cProcess df jcsa">
         <li class="zx1">
             <div class="cSize" style="background: url(images/c/sprit.png) no-repeat 2px 2px"></div>
@@ -108,11 +108,11 @@
         </li>
     </ul>
 </div>
-<div class="cContent3" style="padding-top:95px;padding-bottom: 124px;background: #f6fff4;">
-    <div class="pct100"><img src="images/c/titl3.png" alt="" class="auto db"/></div>
+<div class="cContent3" style="padding-top:95px;padding-bottom: 124px;background: #f6fff4;" >
+    <div class="pct100" id="cProject"><img src="images/c/titl3.png" alt="" class="auto db"/></div>
 </div>
-<div class="cContent4" style="padding-top:95px;">
-    <div class="pct100"><img src="images/c/titl4.png" alt="" class="auto db"/></div>
+<div class="cContent4" style="padding-top:95px;" >
+    <div class="pct100" id="cCooperative"><img src="images/c/titl4.png" alt="" class="auto db"/></div>
     <ul class="home-cooperative df fww jcsb">
         <li><a href="" ><img src="images/home/58-logo.png" alt=""/></a></li>
         <li><a href="" ><img src="images/home/alibaba-logo.png" alt=""/></a></li>

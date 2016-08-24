@@ -34,8 +34,14 @@ animateApp.controller('HomeController', function($scope,anchorScroll) {
 });
 
 // about page controller
-animateApp.controller('CController', function($scope) {
-    $scope.pageClass = 'page-about';
+animateApp.controller('CController', function($scope,anchorScroll) {
+    $scope.pageClass = 'page-c';
+    $scope.jump = {
+        cEmploy:function(){anchorScroll.toView('#cEmploy', true)},
+        cAdvantage:function(){anchorScroll.toView('#cAdvantage', true)},
+        cProject:function(){anchorScroll.toView('#cProject', true)},
+        cCooperative:function(){anchorScroll.toView("#cCooperative",true)}
+    };
     (function(){
         $(".cProcess li").eq(0).hover(function(){
             $(this).find(".cSize").css("background","url(images/c/sprit.png) no-repeat 2px -178px");
@@ -105,7 +111,6 @@ animateApp.controller('CController', function($scope) {
 });
 
 // contact page controller
-animateApp.controller('ContactController', function($scope) {
-    $scope.pageClass = 'page-contact';
-    $scope.message = "<这里是联系页>";
+animateApp.controller('JavaController', function($scope,anchorScroll) {
+    $scope.pageClass = 'page-java';
 });

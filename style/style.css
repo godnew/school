@@ -15,7 +15,7 @@ body{
 
 .page-home      {  }
 .page-c     {  }
-.page-contact   { background:#ffa6bb; color:#9e0000; }
+.page-java   { background:#ffa6bb; color:#9e0000; }
 
 @keyframes rotateFall {
     0%      { transform: rotateZ(0deg); }
@@ -67,8 +67,8 @@ body{
 .page-c.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }
 
 /* contact ---------------------- */
-.page-contact.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
-.page-contact.ng-enter      { animation:slideInUp 0.5s both ease-in; }
+.page-java.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+.page-java.ng-enter      { animation:slideInUp 0.5s both ease-in; }
 
 header{
     width:100%;
@@ -114,11 +114,17 @@ header ul li a{
     background: #fff;
     color: #00bbd3;
 }
+.homeNav li:hover{
+    background: #fff;
+}
+.homeNav li:hover a{
+    color: #00bbd3!important;
+}
 .topActive li a{
     color: #00bbd3;
 }
 .headerActive{
-    background: #fff url(../images/home/up.png) no-repeat 126px center;
+    background: #fff url(../images/home/up.png) no-repeat 126px center!important;
 }
 .headerActive a{
     color: #00bbd3!important;
