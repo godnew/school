@@ -144,5 +144,19 @@ animateApp.controller('PhpController', function($scope,anchorScroll) {
 });
 animateApp.controller('UiController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-ui';
-
+    (function(){
+        $(".uiProgress li").hover(function(){
+            var index=$(this).find("img").attr("index");
+            index="images/ui/ui_icon_active"+index+".png";
+            $(this).find("img").attr("src",index);
+            $(this).find("h1").show();
+            $(this).find("h2").addClass("uiActive").end().find("p").addClass("uiActive");
+        },function(){
+            var index=$(this).find("img").attr("index");
+            index="images/ui/ui_icon"+index+".png";
+            $(this).find("img").attr("src",index);
+            $(this).find("h1").hide();
+            $(this).find("h2").removeClass("uiActive").end().find("p").removeClass("uiActive");
+        });
+    })();
 });

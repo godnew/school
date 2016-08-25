@@ -85,6 +85,11 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .mt15{margin-top:15px;}
 .mt20{margin-top:20px;}
 .mt30{margin-top:30px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mt60{margin-top: 60px;}
+.mt70{margin-top: 70px;}
+.mt80{margin-top: 80px;}
 .mb1{margin-bottom:1px;}
 .mb2{margin-bottom:2px;}
 .mb5{margin-bottom:5px;}
@@ -172,6 +177,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .g6{color:#666;}
 .g9{color:#999;}
 .gc{color:#ccc;}
+.ge{color: #eee;}
 .wh{color:white;}
 /* font-size */
 .f0{font-size:0;}
