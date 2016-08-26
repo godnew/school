@@ -21,6 +21,7 @@ animateApp.controller('HomeController', function($scope,anchorScroll) {
             bannerSlider.next()
         });
     })();
+
     $scope.pageClass = 'page-home';
     $scope.active=false;
     $scope.topActive=false;
@@ -29,8 +30,27 @@ animateApp.controller('HomeController', function($scope,anchorScroll) {
         homeTeacher:function(){anchorScroll.toView('#homeTeacher', true)},
         homeLearn:function(){anchorScroll.toView('#homeLearn', true)},
         homeAbout:function(){anchorScroll.toView("#homeAbout",true)}
-    }
-
+    };
+    (function(){
+        $(function(){
+            var newopt={
+                w2:"410",//小图宽度
+                h2:"360"//小图高度
+            };
+            home_slide($(".container_image"),newopt);
+            $(".homeCourseLink").hover(function(){
+                $(this).find("h1").addClass("home-course-h1-active");
+                $(this).find("p").addClass("home-course-p-active");
+                $(this).find("span").addClass("home-course-button-active");
+                $(this).find('.homeCourseIntro').addClass("home-course-active");
+            },function(){
+                $(this).find("h1").removeClass("home-course-h1-active");
+                $(this).find("p").removeClass("home-course-p-active");
+                $(this).find("span").removeClass("home-course-button-active");
+                $(this).find('.homeCourseIntro').removeClass("home-course-active");
+            });
+        });
+    })();
 });
 
 // about page controller
@@ -108,6 +128,17 @@ animateApp.controller('CController', function($scope,anchorScroll) {
             $(this).find(".cShow").hide(200);
         });
     })();
+
+    (function(){
+
+        var newopt={
+            w2:"240",//小图宽度
+            h2:"442"//小图高度
+        };
+
+        i_slide($(".container_image"),newopt);
+
+    })();
 });
 
 // contact page controller
@@ -144,6 +175,12 @@ animateApp.controller('PhpController', function($scope,anchorScroll) {
 });
 animateApp.controller('UiController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-ui';
+    $scope.jump = {
+        uiEmploy:function(){anchorScroll.toView('#uiEmploy', true)},
+        uiAdvantage:function(){anchorScroll.toView('#uiAdvantage', true)},
+        uiArrange:function(){anchorScroll.toView('#uiArrange', true)},
+        uiProject:function(){anchorScroll.toView('#uiProject', true)}
+    };
     (function(){
         $(".uiProgress li").hover(function(){
             var index=$(this).find("img").attr("index");
