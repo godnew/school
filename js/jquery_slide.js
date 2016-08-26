@@ -11,7 +11,7 @@ function i_slide(obj,opt){
 		h2:"442"//小图高度
 	  }
 
-  var ul=obj.find("ul.slide_img");
+  var ul=obj.find("ul.cslide_img");
   var btn=obj.find(".i_btn");
   var con=ul.find(".on");
   var li=ul.children("li");

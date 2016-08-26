@@ -21,6 +21,7 @@ function home_slide(obj,opt){
     var intro=$(".homeTeacherIntro");
     var length=li.length;
     var half=parseInt(length/2);
+    console.log(length);
     var number;
     var T;
     var start;
