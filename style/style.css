@@ -144,14 +144,25 @@ header ul li a{
     background: #fff;
     color: #00bbd3;
 }
+.topActive li:hover{
+    background: #00bbd3!important;
+}
+
 .homeNav li:hover{
     background: #fff;
+}
+.homeNav li a{
+    font-weight: bold;
 }
 .homeNav li:hover a{
     color: #00bbd3!important;
 }
 .topActive li a{
     color: #00bbd3;
+    font-weight: normal;
+}
+.topActive li:hover a{
+    color: #fff!important;
 }
 .headerActive{
     background: #fff url(../images/home/up.png) no-repeat 126px center!important;
@@ -200,8 +211,7 @@ header ul li a{
     position: absolute;
     top:410px;
     margin:auto;
-    left:0;
-    right: 0;
+    right: 336px;
     text-align: center;
     width: 218px;
     height: 63px;
@@ -213,12 +223,33 @@ header ul li a{
     background: none;
     font-family: "microsoft yahei";
 }
+.baoming{
+    position: absolute;
+    display: inline-block;
+    top:410px;
+    margin:auto;
+    left:336px;
+    text-align: center;
+    width: 218px;
+    height: 63px;
+    line-height: 63px;
+    font-size: 46px;
+    color: #fff;
+    border:1px solid #fff;
+    border-radius: 6px;
+    background: none;
+    font-family: "microsoft yahei";
+}
+.baoming:hover{
+    color: #00bbd3;
+    border:1px solid #00bbd3;
+}
 .slides li button:hover{
     color: #00bbd3;
     border:1px solid #00bbd3;
 }
 .flex-direction-nav a {
-    width: 70px;
+    width: 48px;
     height: 70px;
     line-height: 99em;
     overflow: hidden;
@@ -232,7 +263,6 @@ header ul li a{
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: all .3s ease;
-    border-radius: 35px;
 }
 
 .flex-direction-nav .flex-next {
@@ -515,8 +545,8 @@ footer>div{
     width: 200px;
     height: 65px;
     top:409px;
-    color: #00bbd3;
-    border:1px solid #00bbd3;
+    color: #fff;
+    border:1px solid #fff;
     border-radius: 10px;
     left:0;
     right: 0;
@@ -526,6 +556,10 @@ footer>div{
     line-height: 65px;
     cursor: pointer;
     font-weight: 100;
+}
+.cButton:hover{
+    color: #00bbd3;
+    border:1px solid #00bbd3;
 }
 .cBanner p:nth-of-type(1){
     font-size: 60px;
@@ -561,6 +595,11 @@ footer>div{
     text-align: center;
     margin-top: 52px;
     cursor: pointer;
+}
+.cAction:hover{
+    background: #00bbd3;
+    color: #fff;
+    border:1px solid #00bbd3;
 }
 .cContent1{
     padding:95px 0 55px 0;
@@ -1162,10 +1201,13 @@ footer>div{
 .am-share { font-size: 14px; border-radius: 0; top:236px; left: 0;;right:0;margin:auto; position: fixed; text-align: center; width: 546px;height:364px; z-index: 1110;display:none; }
 .am-modal-out { z-index: 1109; -webkit-transform: translateY(100%); -ms-transform: translateY(100%); transform: translateY(100%) }
 .am-share-title { background-color: #fff; border-bottom: 1px solid #d9d9d9;  color: #00bbd3; font-weight: 400;height: 50px;  line-height: 50px;font-size: 18px;text-align: left;padding:0 24px 0 18px; }
-.am-share-title  span{ float:right;font-size: 52px;font-weight:100;color: #00bbd3;line-height: 40px;}
+.am-share-title  span{ float:right;font-size: 52px;font-weight:100;color: #00bbd3;line-height: 40px;cursor: pointer;}
 .am-share-title::after { border-bottom: 1px solid #dfdfdf; content: ""; display: block; height: 0; margin-top: 10px; width: 100%; }
 .sharebg { background-color: rgba(0, 0, 0, 0.6); bottom: 0; height: 100%; left: 0; opacity: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 1100; display:none; }
 .sharebg-active { opacity: 1; display:block; }
-.am-share-content{
+#to_top{width:40px; height:74px;  background:url(../images/go-top.png) no-repeat center top; position:fixed; cursor:pointer; right: 0;bottom:0 ;}
+#to_top:hover{background-position:center -74px;}
 
+.phpIntro li:hover{
+    background: rgba(200,200,200,0.5);
 }
