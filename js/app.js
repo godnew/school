@@ -2,6 +2,11 @@
  * Created by nhy on 2016/8/22.
  */
 var animateApp = angular.module('animateApp', ['ngRoute', 'ngAnimate']);
+animateApp.run(['$rootScope', '$location', function($rootScope, $location) {
+    $rootScope.$on('$routeChangeSuccess', function(evt, next, previous) {
+        document.documentElement.scrollTop = document.body.scrollTop =0;
+    });
+}]);
 animateApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
@@ -24,6 +29,14 @@ animateApp.config(['$routeProvider',
             when('/ui',{
                 templateUrl: 'template/ui.html',
                 controller: 'UiController'
+            }).
+            when("/vr",{
+                templateUrl: 'template/vr.html',
+                controller: 'VrController'
+            }).
+            when("/mg",{
+                templateUrl: 'template/Mg.html',
+                controller: 'MgController'
             }).
             otherwise({
                 redirectTo: '/home'

@@ -38,18 +38,43 @@ animateApp.controller('HomeController', function($scope,anchorScroll) {
                 h2:"360"//小图高度
             };
             home_slide($(".container_image"),newopt);
-            $(".homeCourseLink").hover(function(){
+            //$(".homeCourseLink").hover(function(){
+            //    $(this).find("h1").addClass("home-course-h1-active");
+            //    $(this).find("p").addClass("home-course-p-active");
+            //    $(this).find("span").addClass("home-course-button-active");
+            //    $(this).find('.homeCourseIntro').addClass("home-course-active");
+            //},function(){
+            //    $(this).find("h1").removeClass("home-course-h1-active");
+            //    $(this).find("p").removeClass("home-course-p-active");
+            //    $(this).find("span").removeClass("home-course-button-active");
+            //    $(this).find('.homeCourseIntro').removeClass("home-course-active");
+            //});
+        });
+        $(".home-course").delegate(".homeCourseLink",'mouseenter',function(){
                 $(this).find("h1").addClass("home-course-h1-active");
                 $(this).find("p").addClass("home-course-p-active");
                 $(this).find("span").addClass("home-course-button-active");
                 $(this).find('.homeCourseIntro').addClass("home-course-active");
-            },function(){
+        }).delegate(".homeCourseLink",'mouseleave',function(){
                 $(this).find("h1").removeClass("home-course-h1-active");
                 $(this).find("p").removeClass("home-course-p-active");
                 $(this).find("span").removeClass("home-course-button-active");
                 $(this).find('.homeCourseIntro').removeClass("home-course-active");
-            });
         });
+    })();
+    (function(){
+        var count=4;
+        var p=$(".home-course").find("li");
+        var lists=Array.prototype.slice.call(p);
+        var list;
+        setInterval(function(){
+            list=lists.pop();
+            lists.unshift(list);
+            $(".home-course").html(lists);
+            $(".home-course").find("li").show();
+            $(".home-course").find("li").eq(4).hide();
+            $(".home-course").find("li").eq(5).hide();
+        },4000)
     })();
 });
 
@@ -288,4 +313,10 @@ animateApp.controller('UiController', function($scope,anchorScroll) {
             $(this).find("h2").removeClass("uiActive").end().find("p").removeClass("uiActive");
         });
     })();
+});
+animateApp.controller('VrController', function($scope,anchorScroll) {
+    $scope.pageClass = 'page-vr';
+});
+animateApp.controller('MgController', function($scope,anchorScroll) {
+    $scope.pageClass = 'page-mg';
 });

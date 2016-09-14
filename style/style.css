@@ -152,7 +152,7 @@ header ul li a{
     background: #fff;
 }
 .homeNav li a{
-    font-weight: bold;
+
 }
 .homeNav li:hover a{
     color: #00bbd3!important;
@@ -216,7 +216,7 @@ header ul li a{
     width: 218px;
     height: 63px;
     line-height: 20px;
-    font-size: 46px;
+    font-size: 30px;
     color: #fff;
     border:1px solid #fff;
     border-radius: 6px;
@@ -233,7 +233,7 @@ header ul li a{
     width: 218px;
     height: 63px;
     line-height: 63px;
-    font-size: 46px;
+    font-size: 30px;
     color: #fff;
     border:1px solid #fff;
     border-radius: 6px;
@@ -422,6 +422,9 @@ header ul li a{
     padding-left: 44px;
     color: #00bbd3;
 }
+.homeCourseLink{
+    cursor:pointer;
+}
 .home-aboutUs{
     width: 1200px;
     margin:45px auto 0 auto;
@@ -478,13 +481,16 @@ header ul li a{
     font-size: 12px;
 }
 .home-connect ul:first-child{
-    margin-right: 60px;
+    margin-right: 25px;
 }
 .home-connect ul:nth-of-type(2){
     margin-right: 60px;
 }
 .home-connect ul:nth-of-type(3){
-    margin-right: 210px;
+    margin-right: 60px;
+}
+.home-connect ul:nth-of-type(4){
+    margin-right: 115px;
 }
 .home-wx{
     margin-top: 12px;
@@ -551,7 +557,7 @@ footer>div{
     left:0;
     right: 0;
     margin:auto;
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
     line-height: 65px;
     cursor: pointer;

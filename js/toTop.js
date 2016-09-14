@@ -9,7 +9,6 @@ window.onload = function(){
     oTop.style.top = screenh - oTop.offsetHeight + "px";
     window.onscroll = function(){
         var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
-        console.log(scrolltop);
         if(scrolltop>100){
             $("#to_top").show();
         }else{
