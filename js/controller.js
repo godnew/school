@@ -316,6 +316,13 @@ animateApp.controller('UiController', function($scope,anchorScroll) {
 });
 animateApp.controller('VrController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-vr';
+    (function(){
+        $(".vr-main").find("li").hover(function(){
+            $(this).children("div").show();
+        },function(){
+            $(this).children("div").hide();
+        });
+    })();
 });
 animateApp.controller('MgController', function($scope,anchorScroll) {
     $scope.pageClass = 'page-mg';
