@@ -102,12 +102,12 @@ body{
 .page-ui.ng-leave      { transform-origin: 100% 0%; animation: rotateOutNewspaper 0.5s both ease-in; }
 
 /*VR------*/
-.page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }
-.page-java.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+.page-vr.ng-enter         { animation: scaleUp 0.5s both ease-in; }
+.page-vr.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
 
 /*MG----*/
-.page-c.ng-enter        { animation:slideInRight 0.5s both ease-in; }
-.page-php.ng-leave      { transform-origin: 0% 0%; animation: rotateDown 1s both ease-in; }
+.page-mg.ng-enter        { animation:slideInRight 0.5s both ease-in; }
+.page-mg.ng-leave      { transform-origin: 0% 0%; animation: rotateDown 1s both ease-in; }
 
 
 header{
@@ -161,9 +161,6 @@ header ul li a{
 .homeNav li:hover{
     background: #fff;
 }
-.homeNav li a{
-
-}
 .homeNav li:hover a{
     color: #00bbd3!important;
 }
@@ -173,6 +170,12 @@ header ul li a{
 }
 .topActive li:hover a{
     color: #fff!important;
+}
+.maxactiveP{
+    background: #fff!important;
+}
+.maxactiveA{
+    color: #00bbd3!important;
 }
 .headerActive{
     background: #fff url(../images/home/up.png) no-repeat 126px center!important;
@@ -1197,6 +1200,45 @@ footer>div{
     margin-top:120px;
     height: 288px;
     background:url(../images/vr/foot.png) no-repeat center center;
+}
+
+/*产品经理*/
+.mg-intro li{
+    width:208px;
+}
+.mg-intro li div{
+    width:34px;
+    height: 3px;
+    background: #00bbd3;
+    margin-top: 18px;
+    margin-bottom:16px;
+}
+#mg-footer{
+    border-top:1px solid transparent;
+    width: 100%;
+    height: 350px;
+    background: url(../images/mg/footer.png) no-repeat center center;
+}
+.mg-btn div{
+    width:180px;
+    height: 50px;
+    border:1px solid #fff;
+    line-height:50px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.mg-btn div:hover{
+    background: #fff;
+    color: #00bbd3;
+}
+.mg-btn div:first-child{
+    margin-left: 290px;
+}
+.mg-btn div:last-child{
+    margin-right:290px;
 }
 
 
