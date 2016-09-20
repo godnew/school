@@ -255,6 +255,9 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .vv{visibility:visible;}
 /* opacity */
 .opa0{opacity:0; filer:alpha(opacity=0);}
+.opa8{
+	opacity:0.8;}
+.opa6{opacity: 0.6;}
 /* zoom */
 .z{*zoom:1;}
 

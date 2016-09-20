@@ -81,33 +81,33 @@ body{
 
 /* page specific animations ------------------------ */
 
-/* home -------------------------- */
-.page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }
-.page-home.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
+/*!* home -------------------------- *!*/
+/*.page-home.ng-enter         { animation: scaleUp 0.5s both ease-in; }*/
+/*.page-home.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }*/
 
-/* c++ ------------------------ */
-.page-c.ng-enter        { animation:slideInRight 0.5s both ease-in; }
-.page-c.ng-leave        { animation:slideOutBottom 0.5s both ease-in; }
+/*!* c++ ------------------------ *!*/
+/*.page-c.ng-enter        { animation:slideInRight 0.5s both ease-in; }*/
+/*.page-c.ng-leave        { animation:slideOutBottom 0.5s both ease-in; }*/
 
-/* java ---------------------- */
-.page-java.ng-enter      { animation:slideInUp 0.5s both ease-in; }
-.page-java.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+/*!* java ---------------------- *!*/
+/*.page-java.ng-enter      { animation:slideInUp 0.5s both ease-in; }*/
+/*.page-java.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }*/
 
-/*PHP------------------*/
-.page-php.ng-enter      { animation:slideInLeft 0.5s both ease-in; }
-.page-php.ng-leave      { transform-origin: 0% 0%; animation: rotateDown 1s both ease-in; }
+/*!*PHP------------------*!*/
+/*.page-php.ng-enter      { animation:slideInLeft 0.5s both ease-in; }*/
+/*.page-php.ng-leave      { transform-origin: 0% 0%; animation: rotateDown 1s both ease-in; }*/
 
-/*UI------------------*/
-.page-ui.ng-enter      { animation:slideInDown 0.5s both ease-in; }
-.page-ui.ng-leave      { transform-origin: 100% 0%; animation: rotateOutNewspaper 0.5s both ease-in; }
+/*!*UI------------------*!*/
+/*.page-ui.ng-enter      { animation:slideInDown 0.5s both ease-in; }*/
+/*.page-ui.ng-leave      { transform-origin: 100% 0%; animation: rotateOutNewspaper 0.5s both ease-in; }*/
 
-/*VR------*/
-.page-vr.ng-enter         { animation: scaleUp 0.5s both ease-in; }
-.page-vr.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }
+/*!*VR------*!*/
+/*.page-vr.ng-enter         { animation: scaleUp 0.5s both ease-in; }*/
+/*.page-vr.ng-leave      { transform-origin: 50% 50%; animation: rotateOutNewspaper .5s both ease-in; }*/
 
-/*MG----*/
-.page-mg.ng-enter        { animation:slideInRight 0.5s both ease-in; }
-.page-mg.ng-leave      { transform-origin: 0% 0%; animation: rotateDown 1s both ease-in; }
+/*!*MG----*!*/
+/*.page-mg.ng-enter        { animation:slideInRight 0.5s both ease-in; }*/
+/*.page-mg.ng-leave      { transform-origin: 0% 0%; animation: rotateDown 1s both ease-in; }*/
 
 
 header{
@@ -135,7 +135,7 @@ header div>ul>li{
     height: 80px;
     line-height: 80px;
     font-size: 24px;
-    padding:0 25px;
+    padding:0 30px;
 }
 header ul li a{
     font-family: "microsoft yahei";
@@ -143,7 +143,7 @@ header ul li a{
 }
 .topActive{
     z-index: 100;
-    margin-left: -25px;
+    margin-left: -30px;
 }
 .topActive li{
     width: 166px;
@@ -224,7 +224,7 @@ header ul li a{
     position: absolute;
     top:410px;
     margin:auto;
-    right: 336px;
+    right: 30%;
     text-align: center;
     width: 218px;
     height: 63px;
@@ -241,7 +241,7 @@ header ul li a{
     display: inline-block;
     top:410px;
     margin:auto;
-    left:336px;
+    left:30%;
     text-align: center;
     width: 218px;
     height: 63px;
@@ -320,7 +320,7 @@ header ul li a{
 .flex-control-paging li a {
     background: #fff;
     display: block;
-    height: 12px;
+    height: 10px;
     overflow: hidden;
     text-indent: -99em;
     width: 60px;
@@ -348,12 +348,14 @@ header ul li a{
     font-weight: normal;
     color: #121212;
     line-height: 40px;
+    opacity: 0.8;
 }
 .border+div p{
     font-size: 20px;
     color: #161616;
     line-height: 20px;
     margin-top: 8px;
+    opacity:0.6;
 }
 .home-course{
     width: 1200px;
@@ -379,6 +381,7 @@ header ul li a{
 .home-course h1{
     color: #121212;
     margin-bottom: 12px;
+    opacity: 0.8;
 }
 .home-course p{
     font-size: 16px;
@@ -386,6 +389,7 @@ header ul li a{
     text-align: center;
     padding:0 20px;
     line-height: 26px;
+    opacity:0.6;
 }
 .home-course span{
     margin-top: 30px;
@@ -430,6 +434,7 @@ header ul li a{
     margin: 40px auto 0 auto;
     width: 1014px;
     line-height: 36px;
+    opacity:0.6;
 }
 .home-intro span{
     padding-left: 44px;
@@ -464,9 +469,10 @@ header ul li a{
 }
 .home-aboutUs li>p{
     padding-left: 36px;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 32px;
+    font-size: 18px;
     color: #151515;
+    opacity: 0.7;
 }
 .home-cooperative{
     width: 1200px;
@@ -485,13 +491,19 @@ header ul li a{
 }
 .home-connect ul li{
     line-height: 34px;
+    color: #121212;
+    font-size: 14px;
+    opacity: 0.7;
 }
 .home-connect ul li:first-child{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.6;
 }
 .home-connect ul li a{
     color: #121212;
-    font-size: 12px;
+    font-size: 14px;
+    opacity: 0.9;
 }
 .home-connect ul:first-child{
     margin-right: 25px;
@@ -525,7 +537,8 @@ header ul li a{
     color: #121212;
     padding-left:20px ;
     margin-top: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    opacity: 0.8;
 }
 .home-phone p:last-child{
     line-height: 30px;
@@ -541,7 +554,7 @@ footer{
     width: 100%;
     background: #333;
     height: 40px;
-    font-size: 20px;
+    font-size: 17px;
     color: #707070;
 }
 footer a{
@@ -637,6 +650,7 @@ footer>div{
     text-align: center;
     font-size: 28px;
     color: #161616;
+    opacity:0.8;
 }
 .cSize{
     width: 180px;
@@ -749,11 +763,13 @@ footer>div{
     line-height: 40px;
     color: #111;
     font-weight: normal;
+    opacity:0.8;
 }
 .javaSelect p{
     font-size: 20px;
     color: #111;
     line-height: 32px;
+    opacity:0.6;
 }
 .javaBtn{
     width:666px;
@@ -888,6 +904,7 @@ footer>div{
     font-size: 43px;
     color: #003036;
     margin-top: 100px;
+    font-weight: normal;
 }
 .phpContent2 h2{
     font-size: 20px;
@@ -931,6 +948,7 @@ footer>div{
     color: #171717;
     text-align: center;
     margin-top: 65px;
+    opacity:0.8;
 }
 .phpContent5{
     height: 185px;
@@ -938,6 +956,7 @@ footer>div{
     background: url(../images/php/background.png) repeat center top;
 }
 .phpContent5>div{
+    margin:auto;
     width: 1200px;
     height: 100%;
     position: relative;
@@ -1050,13 +1069,14 @@ footer>div{
     font-size: 22px;
     color: #fff;
     padding:0 10px;
-    background: #313d3f;
+    background: #555;
 }
 .uiContent2 ul li div p{
     margin-top: 20px;
     font-size: 18px;
     color: #343434;
     line-height: 26px;
+    opacity:0.8;
 }
 .uiContent3{
     background: #f9f9f9;
@@ -1082,13 +1102,15 @@ footer>div{
 .uiTitle{
     font-size: 24px;
     margin-top: 20px;
-    color: #000;
+    color: #333;
+    opacity:0.8;
 }
 .uiArticle{
     font-size: 18px;
     line-height: 26px;
     margin-top: 20px;
-    color: #000;
+    color: #333;
+    opacity:0.8;
 }
 .uiActive{
     color: #00bbd3;
@@ -1153,6 +1175,7 @@ footer>div{
     font-size: 26px;
     color:#121212;
     line-height:45px;
+    opacity:0.6;
 }
 .vr-main{
     margin-top:35px;
@@ -1165,7 +1188,7 @@ footer>div{
     height: 188px;
     padding:20px;
     background: #00bbd3;
-    line-height:26px;
+    line-height:30px;
     font-size: 16px;
     color: #fff;
 }
@@ -1184,7 +1207,7 @@ footer>div{
     cursor: pointer;
 }
 .vr-main li>div p{
-    font-size:50px;
+    font-size:36px;
     color: #fff;
     text-align: center;
     margin-top:90px;
@@ -1297,6 +1320,7 @@ footer>div{
     color: #121212;
     padding:0 115px;
     width: 970px;
+    opacity: 0.6;
 }
 .phpPhoto{
     width: 827px;
@@ -1324,4 +1348,7 @@ footer>div{
 
 .phpIntro li:hover{
     background: rgba(200,200,200,0.5);
+}
+.home-wx p{
+    opacity: 0.8;
 }

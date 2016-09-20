@@ -35,7 +35,7 @@ animateApp.config(['$routeProvider',
                 controller: 'VrController'
             }).
             when("/mg",{
-                templateUrl: 'template/Mg.html',
+                templateUrl: 'template/mg.html',
                 controller: 'MgController'
             }).
             otherwise({
